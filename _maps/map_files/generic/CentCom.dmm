@@ -880,10 +880,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/evacuation/ship)
-"cs" = (
-/obj/machinery/modular_computer/preset/id/centcom,
-/turf/open/floor/carpet/royalblue,
-/area/centcom/central_command_areas/admin)
 "ct" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 9
@@ -1336,12 +1332,6 @@
 /obj/machinery/portable_atmospherics/canister/plasma,
 /turf/open/floor/plating,
 /area/centcom/syndicate_mothership/expansion_bombthreat)
-"dC" = (
-/obj/machinery/modular_computer/preset/id/centcom{
-	dir = 8
-	},
-/turf/open/floor/carpet/purple,
-/area/centcom/central_command_areas/admin)
 "dD" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -1914,6 +1904,10 @@
 /obj/effect/mapping_helpers/airlock/access/any/admin/captain,
 /turf/open/floor/carpet/purple,
 /area/centcom/central_command_areas/admin)
+"fm" = (
+/obj/machinery/modular_computer/preset/id/centcom,
+/turf/open/floor/iron/grimy,
+/area/centcom/central_command_areas/admin)
 "fn" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
@@ -2111,10 +2105,6 @@
 /obj/structure/window/reinforced/spawner/directional/north,
 /turf/open/space/basic,
 /area/space/nearstation)
-"fU" = (
-/obj/machinery/modular_computer/preset/id/centcom,
-/turf/open/floor/iron/grimy,
-/area/centcom/central_command_areas/admin)
 "fV" = (
 /turf/open/floor/iron/dark/herringbone,
 /area/centcom/central_command_areas/evacuation/ship)
@@ -2238,6 +2228,12 @@
 /obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/dark/textured_half,
 /area/centcom/syndicate_mothership/control)
+"gn" = (
+/obj/machinery/modular_computer/preset/id/centcom{
+	dir = 4
+	},
+/turf/open/floor/iron/dark,
+/area/centcom/central_command_areas/admin)
 "go" = (
 /obj/structure/closet,
 /turf/open/floor/circuit,
@@ -2671,6 +2667,15 @@
 	},
 /turf/open/floor/carpet/neon/simple/black,
 /area/centcom/central_command_areas/admin)
+"hv" = (
+/obj/machinery/modular_computer/preset/id/centcom{
+	dir = 4;
+	desc = "A specialized console to connect to gaming computers to be able to broadcast live. Seriously, where does Ook find this stuff?"
+	},
+/obj/structure/fans/tiny/invisible,
+/obj/machinery/light/floor/has_bulb,
+/turf/open/floor/carpet/green,
+/area/centcom/central_command_areas/admin)
 "hw" = (
 /obj/structure/chair/office{
 	dir = 4
@@ -3053,6 +3058,17 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/hall)
+"iy" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/obj/machinery/atmospherics/components/binary/pump/on{
+	dir = 1
+	},
+/obj/machinery/airalarm/directional/west,
+/obj/effect/mapping_helpers/airalarm/unlocked,
+/turf/open/floor/mineral/titanium/tiled/yellow,
+/area/centcom/syndicate_mothership/expansion_bombthreat)
 "iz" = (
 /obj/machinery/washing_machine,
 /obj/structure/extinguisher_cabinet/directional/north,
@@ -3531,6 +3547,12 @@
 /obj/structure/mirror/directional/east,
 /turf/open/floor/mineral/titanium,
 /area/centcom/syndicate_mothership/control)
+"jU" = (
+/obj/machinery/modular_computer/preset/id/centcom{
+	dir = 4
+	},
+/turf/open/floor/plating/abductor,
+/area/centcom/central_command_areas/admin)
 "jV" = (
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 8
@@ -4049,6 +4071,12 @@
 /obj/structure/flora/bush/flowers_yw/style_random,
 /turf/open/floor/grass,
 /area/centcom/central_command_areas/hall)
+"lv" = (
+/obj/machinery/modular_computer/preset/id/centcom{
+	dir = 4
+	},
+/turf/open/floor/circuit,
+/area/centcom/central_command_areas/admin)
 "lw" = (
 /obj/structure/sign/poster/contraband/lizard{
 	pixel_x = -32
@@ -7282,15 +7310,6 @@
 /obj/structure/chair/stool/bar/directional/south,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/borbop)
-"ur" = (
-/obj/machinery/modular_computer/preset/id/centcom{
-	dir = 4;
-	desc = "A specialized console to connect to gaming computers to be able to broadcast live. Seriously, where does Ook find this stuff?"
-	},
-/obj/structure/fans/tiny/invisible,
-/obj/machinery/light/floor/has_bulb,
-/turf/open/floor/carpet/green,
-/area/centcom/central_command_areas/admin)
 "us" = (
 /obj/effect/turf_decal/siding/blue{
 	dir = 6
@@ -10544,13 +10563,6 @@
 /obj/structure/fans/tiny/invisible,
 /turf/open/floor/carpet/green,
 /area/centcom/central_command_areas/admin)
-"Dt" = (
-/obj/machinery/modular_computer/preset/id/centcom,
-/obj/effect/turf_decal/siding/dark{
-	dir = 5
-	},
-/turf/open/floor/iron/dark,
-/area/centcom/central_command_areas/admin)
 "Du" = (
 /obj/item/pizzabox/meat{
 	pixel_y = 5
@@ -11470,12 +11482,6 @@
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/ferry)
-"Gb" = (
-/obj/machinery/modular_computer/preset/id/centcom{
-	dir = 4
-	},
-/turf/open/floor/circuit,
-/area/centcom/central_command_areas/admin)
 "Gc" = (
 /obj/structure/sign/poster/contraband/random/directional/south,
 /obj/structure/chair/pew/left{
@@ -11707,6 +11713,10 @@
 "GG" = (
 /turf/closed/indestructible/syndicate,
 /area/centcom/syndicate_mothership/expansion_fridgerummage)
+"GH" = (
+/obj/machinery/modular_computer/preset/id/centcom,
+/turf/open/floor/iron/dark,
+/area/centcom/central_command_areas/admin)
 "GI" = (
 /obj/effect/turf_decal/tile/dark/opposingcorners,
 /obj/machinery/vending/autodrobe/all_access,
@@ -11798,6 +11808,12 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /turf/open/floor/iron,
 /area/centcom/syndicate_mothership/control)
+"GU" = (
+/obj/machinery/modular_computer/preset/id/centcom{
+	dir = 1
+	},
+/turf/open/floor/iron/grimy,
+/area/centcom/central_command_areas/briefing)
 "GV" = (
 /obj/structure/mop_bucket,
 /obj/item/mop,
@@ -11942,12 +11958,6 @@
 	icon = 'goon/icons/turf/floors.dmi';
 	icon_state = "boxing"
 	},
-/area/centcom/central_command_areas/admin)
-"Hp" = (
-/obj/machinery/modular_computer/preset/id/centcom{
-	dir = 4
-	},
-/turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/admin)
 "Hq" = (
 /obj/effect/turf_decal/siding/wood{
@@ -12933,12 +12943,6 @@
 	},
 /turf/open/floor/iron/dark/herringbone,
 /area/centcom/central_command_areas/hall)
-"Ki" = (
-/obj/machinery/modular_computer/preset/id/centcom{
-	dir = 1
-	},
-/turf/open/floor/iron/dark/herringbone,
-/area/centcom/central_command_areas/admin_hangout)
 "Kj" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 5
@@ -13743,12 +13747,6 @@
 	dir = 5
 	},
 /area/centcom/central_command_areas/hall)
-"Mk" = (
-/obj/machinery/modular_computer/preset/id/centcom{
-	dir = 4
-	},
-/turf/open/floor/plating/abductor,
-/area/centcom/central_command_areas/admin)
 "Ml" = (
 /obj/structure/hedge,
 /turf/open/floor/wood/large,
@@ -13969,19 +13967,6 @@
 	dir = 10
 	},
 /area/centcom/central_command_areas/hall)
-"MR" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 10
-	},
-/obj/machinery/atmospherics/components/binary/pump/on{
-	dir = 1
-	},
-/obj/machinery/airalarm/unlocked{
-	dir = 8;
-	pixel_x = -24
-	},
-/turf/open/floor/mineral/titanium/tiled/yellow,
-/area/centcom/syndicate_mothership/expansion_bombthreat)
 "MS" = (
 /obj/machinery/door/airlock{
 	icon = 'icons/obj/doors/airlocks/station/uranium.dmi';
@@ -15442,6 +15427,13 @@
 /obj/item/food/meat/slab/human/mutant/slime,
 /turf/open/floor/grass,
 /area/centcom/wizard_station)
+"Rh" = (
+/obj/machinery/modular_computer/preset/id/centcom{
+	dir = 1;
+	desc = "A specialized console to connect to gaming computers to be able to broadcast live. Seriously, where does Ook find this stuff?"
+	},
+/turf/open/misc/grass,
+/area/centcom/central_command_areas/admin)
 "Ri" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 5
@@ -15662,13 +15654,6 @@
 /obj/effect/decal/cleanable/fuel_pool,
 /turf/open/floor/grass,
 /area/centcom/central_command_areas/evacuation/ship)
-"RK" = (
-/obj/machinery/modular_computer/preset/id/centcom{
-	dir = 1;
-	desc = "A specialized console to connect to gaming computers to be able to broadcast live. Seriously, where does Ook find this stuff?"
-	},
-/turf/open/misc/grass,
-/area/centcom/central_command_areas/admin)
 "RL" = (
 /obj/effect/turf_decal/tile/dark/diagonal_edge,
 /obj/machinery/light/neon_lining{
@@ -15855,6 +15840,10 @@
 /obj/machinery/light/cold/directional/west,
 /turf/open/floor/mineral/titanium,
 /area/centcom/syndicate_mothership/control)
+"So" = (
+/obj/machinery/modular_computer/preset/id/centcom,
+/turf/open/floor/carpet/royalblue,
+/area/centcom/central_command_areas/admin)
 "Sp" = (
 /obj/structure/closet/crate/freezer{
 	name = "meat freezer"
@@ -15907,6 +15896,12 @@
 /obj/structure/fake_stairs/wood/directional/south,
 /turf/open/floor/iron/dark,
 /area/centcom/tdome/observation)
+"Su" = (
+/obj/machinery/modular_computer/preset/id/centcom{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium/white,
+/area/centcom/central_command_areas/admin)
 "Sv" = (
 /obj/effect/turf_decal/trimline/blue,
 /turf/open/floor/iron/dark,
@@ -16289,10 +16284,6 @@
 	},
 /turf/open/floor/iron/dark/herringbone,
 /area/centcom/central_command_areas/hall)
-"Tx" = (
-/obj/machinery/modular_computer/preset/id/centcom,
-/turf/open/floor/iron/dark,
-/area/centcom/central_command_areas/admin)
 "Ty" = (
 /obj/item/storage/dice{
 	pixel_y = 14;
@@ -17052,6 +17043,12 @@
 	dir = 4
 	},
 /area/centcom/syndicate_mothership/control)
+"VD" = (
+/obj/machinery/modular_computer/preset/id/centcom{
+	dir = 8
+	},
+/turf/open/floor/carpet/purple,
+/area/centcom/central_command_areas/admin)
 "VE" = (
 /obj/structure/table/reinforced,
 /obj/item/gun/ballistic/automatic/wt550,
@@ -17088,12 +17085,6 @@
 "VK" = (
 /turf/open/floor/mineral/titanium,
 /area/centcom/syndicate_mothership/control)
-"VL" = (
-/obj/machinery/modular_computer/preset/id/centcom{
-	dir = 1
-	},
-/turf/open/floor/iron/grimy,
-/area/centcom/central_command_areas/briefing)
 "VM" = (
 /obj/structure/closet/secure_closet/ert_sec,
 /obj/structure/sign/directions/security{
@@ -17156,6 +17147,12 @@
 	dir = 8
 	},
 /turf/open/floor/wood/large,
+/area/centcom/central_command_areas/admin_hangout)
+"VW" = (
+/obj/machinery/modular_computer/preset/id/centcom{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/herringbone,
 /area/centcom/central_command_areas/admin_hangout)
 "VX" = (
 /obj/effect/turf_decal/siding/wood/corner{
@@ -17508,6 +17505,13 @@
 /area/centcom/central_command_areas/supply)
 "WT" = (
 /turf/open/floor/carpet/executive,
+/area/centcom/central_command_areas/admin)
+"WU" = (
+/obj/machinery/modular_computer/preset/id/centcom,
+/obj/effect/turf_decal/siding/dark{
+	dir = 5
+	},
+/turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/admin)
 "WV" = (
 /obj/effect/turf_decal/siding/dark,
@@ -17985,12 +17989,6 @@
 /obj/machinery/computer/camera_advanced,
 /turf/open/floor/iron/dark/herringbone,
 /area/centcom/central_command_areas/evacuation/ship)
-"Yj" = (
-/obj/machinery/modular_computer/preset/id/centcom{
-	dir = 4
-	},
-/turf/open/floor/mineral/titanium/white,
-/area/centcom/central_command_areas/admin)
 "Yk" = (
 /obj/effect/turf_decal/bot,
 /obj/effect/spawner/random/structure/crate,
@@ -22642,7 +22640,7 @@ Wm
 tZ
 bh
 qS
-MR
+iy
 tV
 eH
 qW
@@ -47590,7 +47588,7 @@ aa
 aa
 On
 Ds
-ur
+hv
 jh
 Ua
 Bn
@@ -48091,7 +48089,7 @@ iF
 iF
 iF
 On
-Tx
+GH
 pi
 pi
 pi
@@ -48358,7 +48356,7 @@ SD
 uk
 uk
 uk
-RK
+Rh
 On
 sK
 On
@@ -48628,7 +48626,7 @@ FI
 hD
 FI
 hD
-cs
+So
 hD
 QL
 Fm
@@ -50934,7 +50932,7 @@ pi
 pi
 uD
 gf
-Hp
+gn
 On
 SI
 SI
@@ -51483,7 +51481,7 @@ NQ
 eF
 hx
 TE
-VL
+GU
 eF
 bU
 MY
@@ -52221,19 +52219,19 @@ On
 On
 On
 On
-Tx
+GH
 pi
 pi
 pi
 Ly
 On
-Dt
+WU
 Ss
 vI
 BB
 AC
 On
-dC
+VD
 Aa
 Yd
 cd
@@ -52460,7 +52458,7 @@ PR
 PR
 PR
 On
-Tx
+GH
 gf
 uD
 pi
@@ -52476,7 +52474,7 @@ pi
 pi
 uD
 gf
-Hp
+gn
 On
 On
 Zf
@@ -54001,7 +53999,7 @@ aa
 aa
 aa
 On
-Gb
+lv
 iq
 FS
 pt
@@ -54018,7 +54016,7 @@ Eb
 sh
 AN
 qm
-Yj
+Su
 On
 aa
 aa
@@ -55544,7 +55542,7 @@ aa
 aa
 aa
 On
-fU
+fm
 Nc
 XR
 He
@@ -55560,7 +55558,7 @@ zX
 zX
 cH
 ki
-Mk
+jU
 On
 aa
 aa
@@ -58651,7 +58649,7 @@ Js
 GW
 Js
 Mv
-Ki
+VW
 Xw
 It
 It
