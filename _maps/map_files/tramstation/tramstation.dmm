@@ -1323,6 +1323,7 @@
 "adN" = (
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
+/obj/structure/sink/kitchen/directional/east,
 /turf/open/floor/iron/cafeteria,
 /area/station/security/prison/mess)
 "adO" = (
@@ -1382,11 +1383,6 @@
 /obj/machinery/airalarm/directional/east,
 /turf/open/floor/iron,
 /area/station/escapepodbay)
-"adX" = (
-/obj/structure/cable,
-/obj/structure/sink/kitchen/directional/east,
-/turf/open/floor/iron/cafeteria,
-/area/station/security/prison/mess)
 "adY" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable,
@@ -3368,18 +3364,6 @@
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/starboard/lesser)
 "arI" = (
-/obj/structure/closet/crate/hydroponics,
-/obj/item/paper/guides/jobs/hydroponics,
-/obj/item/seeds/onion,
-/obj/item/seeds/garlic,
-/obj/item/seeds/potato,
-/obj/item/seeds/tomato,
-/obj/item/seeds/carrot,
-/obj/item/seeds/grass,
-/obj/item/seeds/ambrosia,
-/obj/item/seeds/wheat,
-/obj/item/seeds/pumpkin,
-/obj/effect/spawner/random/contraband/prison,
 /obj/machinery/light/directional/east,
 /obj/item/radio/intercom/prison/directional/east,
 /obj/machinery/camera{
@@ -3387,7 +3371,10 @@
 	dir = 6;
 	network = list("ss13","Security","prison")
 	},
-/obj/item/seeds/tower,
+/obj/structure/rack,
+/obj/effect/spawner/random/food_or_drink/seed_tools_prison{
+	spawn_all_loot = 1
+	},
 /turf/open/floor/iron/dark,
 /area/station/security/prison/garden)
 "asc" = (
@@ -5314,6 +5301,10 @@
 	},
 /turf/open/floor/iron,
 /area/station/security/checkpoint/medical)
+"aJg" = (
+/obj/machinery/oven/range,
+/turf/open/floor/iron/cafeteria,
+/area/station/security/prison/mess)
 "aJi" = (
 /obj/machinery/washing_machine,
 /obj/effect/turf_decal/tile/blue/opposingcorners{
@@ -9066,6 +9057,9 @@
 /area/station/service/library)
 "bLk" = (
 /obj/structure/table,
+/obj/machinery/chem_dispenser/drinks{
+	dir = 1
+	},
 /turf/open/floor/iron/cafeteria,
 /area/station/security/prison/mess)
 "bLp" = (
@@ -9941,6 +9935,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/composters,
 /turf/open/floor/iron,
 /area/station/security/prison/garden)
 "bZR" = (
@@ -10969,8 +10964,9 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "cpy" = (
-/obj/structure/table,
-/obj/machinery/microwave,
+/obj/machinery/chem_master/condimaster{
+	name = "CondiMaster Neo"
+	},
 /turf/open/floor/iron/cafeteria,
 /area/station/security/prison/mess)
 "cpG" = (
@@ -12028,6 +12024,10 @@
 /obj/machinery/seed_extractor,
 /obj/effect/turf_decal/trimline/green/filled/line{
 	dir = 5
+	},
+/obj/effect/spawner/random/food_or_drink/seed{
+	spawn_all_loot = 1;
+	spawn_random_offset = 1
 	},
 /turf/open/floor/iron/dark,
 /area/station/security/prison/garden)
@@ -21382,6 +21382,10 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/carpet,
 /area/station/service/library)
+"fJG" = (
+/obj/machinery/griddle,
+/turf/open/floor/iron/cafeteria,
+/area/station/security/prison/mess)
 "fJN" = (
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment,
@@ -30296,6 +30300,13 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark,
 /area/station/command/heads_quarters/hop)
+"iNl" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/iron/cafeteria,
+/area/station/security/prison/mess)
 "iNo" = (
 /obj/effect/turf_decal/trimline/neutral/filled/line{
 	dir = 1
@@ -31997,8 +32008,16 @@
 /area/station/command/meeting_room)
 "joG" = (
 /obj/structure/table,
-/obj/item/book/manual/chef_recipes,
 /obj/structure/sign/clock/directional/south,
+/obj/machinery/reagentgrinder{
+	pixel_x = 6;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/condiment/enzyme{
+	layer = 5
+	},
+/obj/item/book/manual/chef_recipes,
+/obj/item/kitchen/rollingpin,
 /turf/open/floor/iron/cafeteria,
 /area/station/security/prison/mess)
 "joI" = (
@@ -32300,7 +32319,6 @@
 /obj/item/storage/bag/tray/cafeteria,
 /obj/item/storage/bag/tray/cafeteria,
 /obj/item/storage/box/drinkingglasses,
-/obj/machinery/light/directional/south,
 /turf/open/floor/iron/cafeteria,
 /area/station/security/prison/mess)
 "jsW" = (
@@ -33622,7 +33640,8 @@
 /area/station/command/gateway)
 "jPP" = (
 /obj/machinery/duct,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
+/obj/structure/table,
+/obj/item/storage/bag/tray,
 /turf/open/floor/iron/cafeteria,
 /area/station/security/prison/mess)
 "jQa" = (
@@ -35690,6 +35709,14 @@
 /obj/effect/mapping_helpers/airlock/access/all/command/ai_upload,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/turret_protected/aisat/hallway)
+"kzS" = (
+/obj/machinery/light/directional/south,
+/obj/structure/table,
+/obj/machinery/processor{
+	pixel_y = 12
+	},
+/turf/open/floor/iron/cafeteria,
+/area/station/security/prison/mess)
 "kzT" = (
 /obj/effect/spawner/structure/window/reinforced/tinted,
 /turf/open/floor/plating,
@@ -38160,6 +38187,7 @@
 /area/station/science/ordnance/bomb)
 "llf" = (
 /obj/machinery/airalarm/directional/north,
+/obj/machinery/duct,
 /turf/open/floor/iron/cafeteria,
 /area/station/security/prison/mess)
 "llk" = (
@@ -39949,7 +39977,6 @@
 /obj/effect/turf_decal/trimline/neutral/filled/corner{
 	dir = 4
 	},
-/obj/item/cultivator,
 /turf/open/floor/iron/dark,
 /area/station/security/prison/garden)
 "lQC" = (
@@ -42184,6 +42211,13 @@
 	},
 /turf/open/floor/stone,
 /area/station/science/xenobiology)
+"mBo" = (
+/obj/structure/closet/secure_closet/freezer/meat{
+	req_access = null
+	},
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/iron/cafeteria,
+/area/station/security/prison/mess)
 "mBq" = (
 /turf/closed/wall/r_wall,
 /area/station/maintenance/department/crew_quarters/dorms)
@@ -53405,7 +53439,6 @@
 /obj/effect/turf_decal/trimline/green/filled/line{
 	dir = 10
 	},
-/obj/item/plant_analyzer,
 /turf/open/floor/iron/dark,
 /area/station/security/prison/garden)
 "qjJ" = (
@@ -59086,7 +59119,6 @@
 /obj/effect/turf_decal/trimline/green/filled/line{
 	dir = 1
 	},
-/obj/item/shovel/spade,
 /turf/open/floor/iron/dark,
 /area/station/security/prison/garden)
 "rZU" = (
@@ -61749,6 +61781,10 @@
 	},
 /turf/open/floor/wood,
 /area/station/service/library)
+"sQz" = (
+/obj/structure/closet/secure_closet/freezer/kitchen/maintenance,
+/turf/open/floor/iron/cafeteria,
+/area/station/security/prison/mess)
 "sQG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment{
@@ -63597,7 +63633,13 @@
 	dir = 5
 	},
 /obj/effect/turf_decal/trimline/neutral/filled/corner,
-/obj/item/cultivator,
+/obj/structure/closet/crate/hydroponics,
+/obj/effect/spawner/random/contraband/prison,
+/obj/item/paper/guides/jobs/hydroponics,
+/obj/effect/spawner/random/food_or_drink/seed_prison{
+	spawn_all_loot = 1;
+	spawn_random_offset = 1
+	},
 /turf/open/floor/iron/dark,
 /area/station/security/prison/garden)
 "tsE" = (
@@ -65259,6 +65301,12 @@
 /obj/machinery/biogenerator,
 /obj/effect/turf_decal/trimline/green/filled/line{
 	dir = 6
+	},
+/obj/item/reagent_containers/cup/beaker/large,
+/obj/item/reagent_containers/cup/beaker/large,
+/obj/item/reagent_containers/cup/beaker{
+	pixel_x = 8;
+	pixel_y = 2
 	},
 /turf/open/floor/iron/dark,
 /area/station/security/prison/garden)
@@ -94359,10 +94407,10 @@ rau
 cnD
 kRI
 jWs
-aaa
-aaa
-aaa
-aaa
+oVM
+oVM
+oVM
+oVM
 aaa
 aaa
 aaa
@@ -94616,10 +94664,10 @@ kYr
 trx
 wro
 jWs
-aaa
-aaa
-aaa
-aaa
+sQz
+mBo
+sQz
+oVM
 aaa
 pZW
 pZW
@@ -94873,9 +94921,9 @@ ggX
 jWs
 oVM
 oVM
-oVM
-oVM
-oVM
+mgS
+mgS
+mgS
 oVM
 aaa
 pZW
@@ -95130,8 +95178,8 @@ xcj
 oEN
 oVM
 adN
-adX
 dRJ
+iNl
 pWp
 oVM
 aaa
@@ -95644,7 +95692,7 @@ rBz
 ung
 cQD
 mgS
-bLk
+fJG
 edg
 smV
 oVM
@@ -95901,9 +95949,9 @@ rBz
 ung
 fZm
 mgS
-bLk
+aJg
 edg
-jsN
+kzS
 oVM
 aaa
 aaa
@@ -96158,8 +96206,8 @@ rBz
 ung
 fZm
 mgS
-afL
-jBD
+jsN
+edg
 cpy
 oVM
 aaa
@@ -96415,7 +96463,7 @@ rBz
 ung
 cQD
 adO
-mgS
+afL
 jBD
 bLk
 rUR
