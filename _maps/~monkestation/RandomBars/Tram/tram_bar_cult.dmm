@@ -880,7 +880,7 @@
 /area/station/service/kitchen)
 "vP" = (
 /obj/structure/sign/clock/directional/north,
-/obj/structure/window,
+/obj/structure/window/spawner/directional/south,
 /obj/effect/turf_decal/trimline/yellow/warning,
 /turf/open/floor/cult,
 /area/station/service/kitchen)
@@ -1124,7 +1124,7 @@
 /area/station/service/kitchen)
 "BK" = (
 /obj/structure/ladder,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/cult,
 /area/station/service/kitchen)
 "BN" = (
@@ -1315,9 +1315,7 @@
 /obj/effect/turf_decal/trimline/yellow/warning{
 	dir = 4
 	},
-/obj/structure/window{
-	dir = 4
-	},
+/obj/structure/window/spawner/directional/east,
 /turf/open/floor/cult,
 /area/station/service/kitchen)
 "Fc" = (
@@ -1508,9 +1506,7 @@
 /obj/effect/turf_decal/trimline/yellow/warning{
 	dir = 8
 	},
-/obj/structure/window{
-	dir = 8
-	},
+/obj/structure/window/spawner/directional/west,
 /turf/open/floor/cult,
 /area/station/service/kitchen)
 "JR" = (
@@ -2061,7 +2057,7 @@
 /turf/open/floor/cult,
 /area/station/commons/lounge)
 "XA" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/cult,
 /area/station/service/kitchen)
 "XG" = (

@@ -837,7 +837,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/centcom/syndicate_mothership/expansion_bombthreat)
 "cl" = (
-/obj/structure/bed/roller,
+/obj/structure/bed/medical/emergency,
 /obj/machinery/iv_drip,
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /obj/effect/decal/cleanable/cobweb,
@@ -1277,7 +1277,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/centcom/syndicate_mothership/control)
 "dt" = (
-/obj/structure/window/reinforced/tinted/frosted,
+/obj/structure/window/reinforced/tinted/frosted/spawner/directional/south,
 /obj/structure/closet/mini_fridge,
 /turf/open/floor/iron/dark/small,
 /area/centcom/central_command_areas/admin)
@@ -5693,7 +5693,7 @@
 /area/centcom/central_command_areas/supplypod/loading/ert)
 "pV" = (
 /obj/structure/lattice,
-/obj/structure/window/reinforced/spawner,
+/obj/structure/window/reinforced/spawner/directional/south,
 /turf/open/space/basic,
 /area/space/nearstation)
 "pW" = (
@@ -6184,7 +6184,7 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
 "ro" = (
-/obj/structure/window/reinforced/tinted/frosted,
+/obj/structure/window/reinforced/tinted/frosted/spawner/directional/south,
 /turf/open/floor/iron/dark/small,
 /area/centcom/central_command_areas/admin)
 "rp" = (
@@ -12131,7 +12131,7 @@
 /turf/open/floor/iron/white/diagonal,
 /area/centcom/central_command_areas/admin)
 "HR" = (
-/obj/structure/bed/roller,
+/obj/structure/bed/medical/emergency,
 /obj/machinery/iv_drip,
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /obj/machinery/light/directional/west,
@@ -13388,7 +13388,7 @@
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/evacuation/ship)
 "Lo" = (
-/obj/structure/window/reinforced/spawner,
+/obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/lattice,
 /turf/open/space/basic,
 /area/space/nearstation)
@@ -13975,10 +13975,8 @@
 /obj/machinery/atmospherics/components/binary/pump/on{
 	dir = 1
 	},
-/obj/machinery/airalarm/unlocked{
-	dir = 8;
-	pixel_x = -24
-	},
+/obj/machinery/airalarm/directional/west,
+/obj/effect/mapping_helpers/airalarm/unlocked,
 /turf/open/floor/mineral/titanium/tiled/yellow,
 /area/centcom/syndicate_mothership/expansion_bombthreat)
 "MS" = (
@@ -16493,9 +16491,6 @@
 /area/centcom/central_command_areas/admin)
 "Ua" = (
 /obj/structure/table/reinforced/titaniumglass,
-/obj/structure/window/reinforced/survival_pod/spawner/directional{
-	dir = 1
-	},
 /obj/machinery/door/window/left/directional/west{
 	name = "Secret Stuff";
 	req_access = list("robotics");
@@ -16517,6 +16512,7 @@
 	pixel_y = -4;
 	color = "#fcba03"
 	},
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
 /turf/open/floor/carpet/green,
 /area/centcom/central_command_areas/admin)
 "Ub" = (
