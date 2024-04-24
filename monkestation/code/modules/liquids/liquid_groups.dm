@@ -329,17 +329,6 @@ GLOBAL_VAR_INIT(liquid_debug_colors, FALSE)
 			check_edges(open_turf)
 	process_group()
 
-/datum/liquid_group/proc/remove_all(obj/effect/abstract/liquid_turf/remover, amount)
-	reagents.remove_all(amount, TRUE)
-	if(remover)
-		check_liquid_removal(remover, amount)
-	total_reagent_volume = reagents.total_volume
-	reagents_per_turf = total_reagent_volume / members.len
-	expected_turf_height = CEILING(reagents_per_turf, 1) / LIQUID_HEIGHT_DIVISOR
-	if(!total_reagent_volume && !reagents.total_volume)
-		remove_all()
-		qdel(src)
-
 /datum/liquid_group/proc/remove_specific(obj/effect/abstract/liquid_turf/remover, amount, datum/reagent/reagent_type)
 	reagents.remove_reagent(reagent_type.type, amount)
 	if(remover)
