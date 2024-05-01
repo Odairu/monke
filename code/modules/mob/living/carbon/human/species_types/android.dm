@@ -5,6 +5,7 @@
 		NO_DNA_COPY,
 		NOTRANSSTING,
 		NO_UNDERWEAR,
+		NOHUSK
 	)
 	inherent_traits = list(
 		TRAIT_CAN_USE_FLIGHT_POTION,
@@ -23,18 +24,31 @@
 		TRAIT_RESISTHIGHPRESSURE,
 		TRAIT_TOXIMMUNE,
 		TRAIT_NOBLOOD,
+		TRAIT_VIRUSIMMUNE,
 	)
 
 	inherent_biotypes = MOB_ROBOTIC|MOB_HUMANOID
-	meat = null
+	meat = /obj/item/stack/sheet/plasteel{amount = 5}
+	skinned_type = /obj/item/stack/sheet/iron{amount = 10}
+	species_gibs = GIB_TYPE_ROBOTIC
+	mutantbrain = /obj/item/organ/internal/brain/cybernetic
 	mutanttongue = /obj/item/organ/internal/tongue/robot
 	mutantstomach = null
 	mutantheart = null
 	mutantliver = null
 	mutantlungs = null
+	mutantappendix = null
+	mutantbladder = null
+	mutanteyes = /obj/item/organ/internal/eyes/robotic
+	mutantears = /obj/item/organ/internal/ears/cybernetic
+	mutantbutt = /obj/item/organ/internal/butt/cyber
 	species_language_holder = /datum/language_holder/synthetic
 	wing_types = list(/obj/item/organ/external/wings/functional/robotic)
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC | RACE_SWAP | ERT_SPAWN | SLIME_EXTRACT
+	reagent_tag = PROCESS_SYNTHETIC // They don't HAVE a liver, but if they did, they'd have synthetic chem processing.
+	special_step_sounds = list('sound/effects/servostep.ogg')
+	
+	
 
 	bodypart_overrides = list(
 		BODY_ZONE_HEAD = /obj/item/bodypart/head/robot/android,
