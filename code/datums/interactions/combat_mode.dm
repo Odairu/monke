@@ -1,6 +1,7 @@
 /datum/interaction_mode/combat_mode
 	shift_to_open_context_menu = TRUE
 	var/combat_mode = FALSE
+	var/held_hud //Monkeystation Edit. Ensures the HUD is tracked to prevent harddels
 
 /datum/interaction_mode/combat_mode/update_istate(mob/M, modifiers)
 	M.istate = NONE
@@ -19,6 +20,7 @@
 	if (!M.hud_used.has_interaction_ui)
 		return
 	var/atom/movable/screen/combattoggle/flashy/CT = new
+	held_hud = CT //Monkeystation Edit. Keep track of this HUD for future destruction.
 	CT.hud = H
 	CT.icon = H.ui_style
 	CT.combat_mode = src

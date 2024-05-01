@@ -335,7 +335,6 @@
 	var/datum/reagent/blood_type = get_blood_id()
 	var/list/temp_blood_DNA
 	if(small_drip)
-
 		if(T.liquids)
 			var/list/blood_drop = list(get_blood_id() = 0.1)
 			T.add_liquid_list(blood_drop, FALSE, 300)
@@ -347,7 +346,7 @@
 				T.pollute_turf(/datum/pollutant/metallic_scent, 5)
 				drop.drips++
 				drop.add_overlay(pick(drop.random_icon_states))
-				drop.transfer_mob_blood_dna(src)
+				drop.transfer_mob_blood_dna(src, TRUE) //MONKEY EDIT: , TRUE append to allow for custom blood colours. Also makes blood splatters now transfer DNA! Forensics buff!
 				return
 			else
 				temp_blood_DNA = GET_ATOM_BLOOD_DNA(drop) //we transfer the dna from the drip to the splatter
@@ -355,7 +354,7 @@
 		else
 			T.pollute_turf(/datum/pollutant/metallic_scent, 5)
 			drop = new(T, get_static_viruses())
-			drop.transfer_mob_blood_dna(src)
+			drop.transfer_mob_blood_dna(src, TRUE) //MONKEY EDIT: , TRUE append to allow for custom blood colours. Also makes blood splatters now transfer DNA! Forensics buff!
 			return
 
 	// Create a bit of metallic pollution, as that's how blood smells
@@ -365,10 +364,11 @@
 	var/obj/effect/decal/cleanable/blood/B = locate() in T
 	if(!B)
 		B = new /obj/effect/decal/cleanable/blood/splatter(T, get_static_viruses())
+		B.transfer_mob_blood_dna(src, TRUE) //MONKEY EDIT: , TRUE append to allow for custom blood colours. Also makes blood splatters now transfer DNA! Forensics buff!
 	if(QDELETED(B)) //Give it up
 		return
 	B.bloodiness = min((B.bloodiness + BLOOD_AMOUNT_PER_DECAL), BLOOD_POOL_MAX)
-	B.transfer_mob_blood_dna(src) //give blood info to the blood decal.
+	B.transfer_mob_blood_dna(src, TRUE) //MONKEY EDIT: , TRUE append to allow for custom blood colours
 	if(temp_blood_DNA)
 		B.add_blood_DNA(temp_blood_DNA)
 
@@ -376,8 +376,8 @@
 		if(blood_type)
 			B.color = initial(blood_type.color)
 		B.count ++
-		B.transfer_mob_blood_dna(src)
-	B.transfer_mob_blood_dna(src) //give blood info to the blood decal.
+		B.transfer_mob_blood_dna(src, TRUE) //MONKEY EDIT: , TRUE append to allow for custom blood colours. Also makes blood splatters now transfer DNA! Forensics buff!
+	B.transfer_mob_blood_dna(src, TRUE) //MONKEY EDIT: , TRUE append to allow for custom blood colours
 	if(temp_blood_DNA)
 		B.add_blood_DNA(temp_blood_DNA)
 
