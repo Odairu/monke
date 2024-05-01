@@ -118,7 +118,7 @@
 
 //Takes a flat of our reagents and returns it, possibly qdeling our liquids
 /obj/effect/abstract/liquid_turf/proc/take_reagents_flat(flat_amount)
-	liquid_group.remove_any(src, flat_amount)
+	liquid_group.remove_all(src, flat_amount)
 
 /obj/effect/abstract/liquid_turf/proc/movable_entered(datum/source, atom/movable/AM)
 	SIGNAL_HANDLER
