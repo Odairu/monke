@@ -333,6 +333,7 @@
 		"Mechanic",
 		"Apprentice Engineer",
 		"Engineering Trainee",
+		"Network Technician"
 	)
 
 /datum/job/virologist
